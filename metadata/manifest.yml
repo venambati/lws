@@ -4,7 +4,7 @@ Cartridge-Short-Name: SOLR
 Display-Name: Solr 0.1
 Description: The Solr Cartridge
 Version: '0.1'
-Source-Url: git://github.com/venambati/lws.git
+Source-Url: https://s3.amazonaws.com/lucid-customer/LWE_2_6_2/lucidworks-search-2.6.2.tar.gz
 License: ASL 2.0
 License-Url: http://www.apache.org/licenses/LICENSE-2.0.txt
 Cartridge-Version: 0.0.1
