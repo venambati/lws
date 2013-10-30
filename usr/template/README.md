@@ -1,0 +1,1 @@
+The OpenShift `solr` cartridge documentation can be found at:
