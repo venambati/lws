@@ -12,8 +12,8 @@ Compatible-Versions:
 - 0.0.1
 - 0.0.2
 - 0.0.3
-Cartridge-Vendor: redhat-devel
-Vendor: redhat-devel
+Cartridge-Vendor: redhatDevel
+Vendor: redhatDevel
 Categories:
 - web_framework
 - experimental
