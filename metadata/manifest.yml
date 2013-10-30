@@ -54,6 +54,15 @@ Cart-Data:
 - Key: OPENSHIFT_GEAR_UUID
   Type: environment
   Description: Unique ID which identified the gear. This value changes between gears.
+- Key: OPENSHIFT_SOLR_PROXY_PORT
+  Type: environment
+  Description: Unique ID which identified the gear. This value changes between gears.
+- Key: OPENSHIFT_SOLR_SEARCH_PROXY_PORT
+  Type: environment
+  Description: Unique ID which identified the gear. This value changes between gears.
+- Key: OPENSHIFT_SOLR_SEARCH_PORT
+  Type: environment
+  Description: Unique ID which identified the gear. This value changes between gears.
 Provides:
 - solr-0.1
 - solr
