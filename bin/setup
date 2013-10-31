@@ -2,6 +2,9 @@
 
 source $OPENSHIFT_CARTRIDGE_SDK_BASH
 
+URL=https://s3.amazonaws.com/lucid-customer/LWE_2_6_2
+FILE=lucidworks-search-2.6.2.tar.gz
+
 case "$1" in
   -v|--version)
     version="$2"
@@ -10,4 +13,13 @@ esac
 # Create additional directories required by the diy cartridge
 mkdir -p $OPENSHIFT_SOLR_DIR/{logs,run}
 
-client_result "Disclaimer: This is an experimental cartridge that provides a way to try unsupported languages, frameworks, and middleware on OpenShift."
+echo -e "Downloading LWS...\n"
+curl -C - -O ${URL}/${FILE}
+
+echo -e "Unpacking LWS...\n"
+tar -xpf ${FILE} 
+
+echo -e "Removing LWS archive...\n"
+rm ${FILE}
+
+client_result "Disclaimer: This is an experimental cartridge that provides Solr on OpenShift. Report problems to Mark Austin <maustin@redhat.com>"
