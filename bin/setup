@@ -14,12 +14,12 @@ esac
 mkdir -p $OPENSHIFT_SOLR_DIR/{logs,run};
 
 echo -e "Downloading LWS...\n";
-# curl -C - -O ${URL}/${FILE}
+curl -C - -O ${URL}/${FILE}
 
 echo -e "Unpacking LWS...\n";
-# tar -xpf ${FILE};
+tar -xpf ${FILE};
 
 echo -e "Removing LWS archive...\n";
-# rm ${FILE};
+rm ${FILE};
 
 client_result "Disclaimer: This is an experimental cartridge that provides Solr on OpenShift. Report problems to Mark Austin <maustin@redhat.com>"
