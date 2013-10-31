@@ -14,7 +14,7 @@ esac
 mkdir -p $OPENSHIFT_SOLR_DIR/{logs,run};
 
 echo -e "Downloading LWS...\n";
-curl -C - -O ${URL}/${FILE}
+wget --no-check-certificate ${URL}/${FILE};
 
 echo -e "Unpacking LWS...\n";
 tar -xpf ${FILE};
