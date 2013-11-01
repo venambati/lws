@@ -1,4 +1,4 @@
-%global cartridgedir %{_libexecdir}/openshift/cartridges/diy
+%global cartridgedir %{_libexecdir}/openshift/cartridges/solr
 
 Summary:       Solr cartridge
 Name:          openshift-origin-cartridge-solr

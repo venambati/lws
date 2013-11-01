@@ -10,7 +10,7 @@ case "$1" in
     version="$2"
 esac
 
-# Create additional directories required by the diy cartridge
+# Create additional directories required by the solr cartridge
 mkdir -p $OPENSHIFT_SOLR_DIR/{logs,run};
 
 # echo -e "Downloading LWS...\n";
